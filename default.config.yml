@@ -40,7 +40,6 @@ homebrew_installed_packages:
   - cowsay
   - git
   - gpg
-  - iterm2
   - openssl
   - pv
   - ssh-copy-id
@@ -59,10 +58,13 @@ homebrew_cask_apps:
   - font-fira-code
   - google-chrome
   - haptickey
+  - iterm2
+  - itsycal
   - licecap  # quickly create gifs
   - slack
   - sublime-text
   - vagrant
+  - virtualbox
   - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
