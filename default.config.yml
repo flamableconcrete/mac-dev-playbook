@@ -50,11 +50,13 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
+  - font-fira-code
   - google-chrome
   - haptickey
   - licecap  # quickly create gifs
