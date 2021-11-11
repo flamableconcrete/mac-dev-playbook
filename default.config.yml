@@ -3,7 +3,7 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: true
-configure_osx: true
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -24,15 +24,14 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/flamableconcrete/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
-  - .zshrc
   - .gitignore
-  - .inputrc
-  - .osx
+  #- .osx
   - .vimrc
+  #- .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -45,6 +44,7 @@ homebrew_installed_packages:
   - openssl
   - pv
   - ssh-copy-id
+  - starship
   - wget
 
 homebrew_taps:
@@ -56,6 +56,7 @@ homebrew_cask_apps:
   #- chromedriver
   - docker
   - google-chrome
+  - haptickey
   - licecap  # quickly create gifs
   - slack
   - sublime-text
