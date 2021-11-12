@@ -3,19 +3,54 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: true
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+  - 'App Store'
+  - Calendar
+  - Contacts
+  - FaceTime
+  - Home
+  - Launchpad
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - News
+  - Notes
+  - Photos
+  - Podcasts
+  - Reminders
+  - Safari
+  - Stickies
+  - Stocks
+  - 'System Preferences'
+  - TextEdit
+  - TV
+dockitems_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 1
+  - name: "Microsoft Outlook"
+    path: "/Applications/Microsoft Outlook.app/"
+    pos: 2
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 3
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app/"
+    pos: 4
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 5
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 6
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 7
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -29,7 +64,7 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .gitignore
-  #- .osx
+  - .osx
   - .vimrc
   #- .zshrc
 
@@ -37,14 +72,31 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - asdf
+  - certbot
   - cowsay
+  #- direnv
+  - docker-compose
   - git
+  - git-extras
+  - gource
   - gpg
+  - graphviz
+  - htop
+  - imagemagick
+  - jq
   - openssl
+  - packer
+  - p7zip
   - pv
+  - readline  # asdf python
+  - sqlite3
   - ssh-copy-id
   - starship
+  - tmux
+  - tree
   - wget
+  - xz  # asdf python
+  - zlib  # asdf python
 
 homebrew_taps:
   - homebrew/core
@@ -53,6 +105,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - alfred
   - chromedriver
   - docker
   - font-fira-code
