@@ -66,7 +66,7 @@ dotfiles_files:
   - .gitignore
   - .osx
   - .vimrc
-  #- .zshrc
+  - .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -164,6 +164,19 @@ sublime_package_control:
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
+
+git_repos:
+  - url: "https://github.com/zsh-users/zsh-autosuggestions.git"
+    path: "/Users/{{ ansible_env.USER }}/.zsh_custom/plugins/zsh-autosuggestions"
+  - url: "https://github.com/zsh-users/zsh-completions.git"
+    path: "/Users/{{ ansible_env.USER }}/.zsh_custom/plugins/zsh-completions"
+  - url: "https://github.com/flamableconcrete/zsh-motd.git"
+    path: "/Users/{{ ansible_env.USER }}/.zsh_custom/plugins/zsh-motd"
+  - url: "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    path: "/Users/{{ ansible_env.USER }}/.zsh_custom/plugins/zsh-syntax-highlighting"
+extra_git_repos: []
+#  - url: "https://github.com/flamableconcrete/dotfiles.git"
+#    path: "/Users/{{ ansible_env.USER }}/code/dotfiles-test"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

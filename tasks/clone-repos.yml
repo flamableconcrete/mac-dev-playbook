@@ -1,0 +1,16 @@
+---
+- name: Clone default git repositories
+  git:
+    repo: "{{ item.url }}"
+    dest: "{{ item.path }}"
+  become: true
+  become_user: "{{ ansible_env.USER }}"
+  loop: "{{ git_repos }}"
+
+- name: Clone extra git repositories
+  git:
+    repo: "{{ item.url }}"
+    dest: "{{ item.path }}"
+  become: true
+  become_user: "{{ ansible_env.USER }}"
+  loop: "{{ extra_git_repos }}"
