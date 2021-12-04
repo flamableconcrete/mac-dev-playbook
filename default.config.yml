@@ -51,6 +51,12 @@ dockitems_persist:
   - name: "Sublime Text"
     path: "/Applications/Sublime Text.app/"
     pos: 7
+  - name: "GIMP-2.10"
+    path: "/Applications/GIMP-2.10.app/"
+    pos: 7
+  - name: "Microsoft OneNote"
+    path: "/Applications/Microsoft OneNote.app/"
+    pos: 8
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -86,6 +92,7 @@ homebrew_installed_packages:
   - jq
   - openssl
   - packer
+  - postgresql
   - p7zip
   - pv
   - readline  # asdf python
@@ -107,13 +114,20 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
   - chromedriver
+  - discord
   - docker
   - font-fira-code
+  - gimp
   - google-chrome
   - haptickey
+  - hiddenbar
   - iterm2
   - itsycal
   - licecap  # quickly create gifs
+  - mattermost
+  - postman
+  - pycharm
+  - rectangle
   - slack
   - sublime-text
   - vagrant
