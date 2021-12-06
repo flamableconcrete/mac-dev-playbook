@@ -57,6 +57,9 @@ dockitems_persist:
   - name: "Microsoft OneNote"
     path: "/Applications/Microsoft OneNote.app/"
     pos: 8
+  - name: "Microsoft Remote Desktop"
+    path: "/Applications/Microsoft Remote Desktop.app/"
+    pos: 9
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -125,6 +128,7 @@ homebrew_cask_apps:
   - itsycal
   - licecap  # quickly create gifs
   - mattermost
+  - microsoft-remote-desktop
   - postman
   - pycharm
   - rectangle
