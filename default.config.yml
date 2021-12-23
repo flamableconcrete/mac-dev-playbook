@@ -123,6 +123,7 @@ homebrew_cask_apps:
   - discord
   - docker
   - font-fira-code
+  - font-fira-mono-nerd-font
   - gimp
   - google-chrome
   - haptickey
