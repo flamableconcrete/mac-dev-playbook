@@ -135,7 +135,6 @@ homebrew_cask_apps:
   - slack
   - sublime-text
   - vagrant
-  - virtualbox
   - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
