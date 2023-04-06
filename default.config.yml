@@ -60,8 +60,8 @@ dockitems_persist:
   - name: "Microsoft Remote Desktop"
     path: "/Applications/Microsoft Remote Desktop.app/"
     pos: 10
-  - name: "Discord"
-    path: "/Applications/Discord.app/"
+  - name: "MongoDB Compass"
+    path: "/Applications/MongoDB Compass.app/"
     pos: 11
 
 configure_sudoers: false
@@ -83,33 +83,34 @@ dotfiles_files:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
-  - asdf
   - certbot
   - cowsay
-  #- direnv
+  - direnv
   - docker-compose
   - git
   - git-extras
-  - gource
   - gpg
   - graphviz
   - htop
   - imagemagick
   - jq
+  - nvm
   - openssl
   - packer
   - postgresql
   - p7zip
   - pv
-  - readline  # asdf python
-  - sqlite3
+  - pyenv
+  - readline  # pyenv
+  - sqlite3  # pyenv
   - ssh-copy-id
   - starship
+  - tcl-tk  # pyenv
   - tmux
   - tree
   - wget
-  - xz  # asdf python
-  - zlib  # asdf python
+  - xz  # pyenv
+  - zlib  # pyenv
 
 homebrew_taps:
   - homebrew/core
@@ -125,15 +126,11 @@ homebrew_cask_apps:
   - font-fira-code-nerd-font
   - gimp
   - google-chrome
-  - haptickey
   - hiddenbar
   - iterm2
   - itsycal
   - licecap  # quickly create gifs
-  - mattermost
   - microsoft-remote-desktop
-  - postman
-  - pycharm
   - rectangle
   - slack
   - sublime-text
