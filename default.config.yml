@@ -117,23 +117,31 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
+  - amazon-workspaces
   - chromedriver
   - discord
   - docker
   - font-fira-code-nerd-font
   - gimp
   - google-chrome
+  - google-cloud-sdk
+  - grandperspective
   - hiddenbar
+  - istat-menus
   - iterm2
   - itsycal
+  - karabiner-elements
+  - keepassxc
   - licecap  # quickly create gifs
-  - microsoft-remote-desktop
   - mongodb-compass
+  - obsidian
+  - pycharm
   - rectangle
   - slack
   - sublime-text
-  - vagrant
   - visual-studio-code
+  - vmware-horizon-client
+  - webstorm
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
