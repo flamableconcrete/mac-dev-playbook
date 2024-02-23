@@ -103,6 +103,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - starship
   - tcl-tk  # pyenv
+  - hashicorp/tap/terraform
   - tmux
   - tree
   - wget
@@ -110,9 +111,10 @@ homebrew_installed_packages:
   - zlib  # pyenv
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+  # - homebrew/core
+  # - homebrew/cask
   - homebrew/cask-fonts
+  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
