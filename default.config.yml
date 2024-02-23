@@ -130,7 +130,7 @@ homebrew_cask_apps:
   - istat-menus
   - iterm2
   - itsycal
-  - karabiner-elements
+  - karabiner-elements  # re-map keys on keyboard
   - keepassxc
   - licecap  # quickly create gifs
   - mongodb-compass
