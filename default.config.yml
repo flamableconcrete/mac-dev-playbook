@@ -111,9 +111,6 @@ homebrew_installed_packages:
   - zlib  # pyenv
 
 homebrew_taps:
-  # - homebrew/core
-  # - homebrew/cask
-  - homebrew/cask-fonts
   - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
@@ -123,7 +120,7 @@ homebrew_cask_apps:
   - chromedriver
   - discord
   - docker
-  - font-fira-code-nerd-font
+  - font-fira-code
   - gimp
   - google-chrome
   - google-cloud-sdk
