@@ -133,6 +133,7 @@ homebrew_cask_apps:
   - keepassxc
   - licecap  # quickly create gifs
   - mongodb-compass
+  - notunes  # prevent iTunes or Apple Music from launching
   - obsidian
   - pycharm
   - rectangle
