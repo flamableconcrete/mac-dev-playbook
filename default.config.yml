@@ -84,6 +84,7 @@ homebrew_installed_packages:
   - cowsay
   - direnv
   - docker-compose
+  - fzf
   - git
   - git-extras
   - gpg
@@ -93,7 +94,6 @@ homebrew_installed_packages:
   - jq
   - nvm
   - openssl
-  - packer
   - postgresql
   - p7zip
   - pv
@@ -116,7 +116,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
-  - amazon-workspaces
   - chromedriver
   - discord
   - docker
@@ -135,13 +134,11 @@ homebrew_cask_apps:
   - mongodb-compass
   - notunes  # prevent iTunes or Apple Music from launching
   - obsidian
-  - pycharm
   - rectangle
   - slack
   - sublime-text
   - visual-studio-code
   - vmware-horizon-client
-  - webstorm
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
